@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row wheader">
+            <div class="col-md-6 wcount center">
+              <div>
+                <p class="fs18">5</p>
+              </div>
+            </div>
+            <div class="col-md-6 wtitle center">
+              <p class="fs18">Workspaces</p>
+            </div>
+          </div>
+          <div class="row">
+            <ul>
+              <li>
+                <div class="col-md-9">
+                  <h4>Workspace 1</h4>
+                  <p>Workspace Desc</p>
+                </div>
+                <div class="col-md-3">
+                  <a class="btn btn-small btn-info" href="#">
+                    <i class="icon-info-sign"></i></a>
+                  <a class="btn btn-danger" href="#">
+                    <i class="icon-trash icon-large"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row wheader">
+            <div class="col-md-6 wcount center">
+              <div>
+                <p class="fs18">5</p>
+              </div>
+            </div>
+            <div class="col-md-6 wtitle center">
+              <p class="fs18">Projects</p>
+            </div>
+          </div>
+          <div class="row">
+            <ul>
+              <li>
+                <div class="col-md-9">
+                  <h4>Project 1</h4>
+                  <p>Project Desc</p>
+                </div>
+                <div class="col-md-3">
+                  <a class="btn btn-small btn-info" href="#">
+                    <i class="icon-info-sign"></i></a>
+                  <a class="btn btn-danger" href="#">
+                    <i class="icon-trash icon-large"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row wheader">
+            <div class="col-md-6 wcount center">
+              <div>
+                <p class="fs18">{{pages.length}}</p>
+              </div>
+            </div>
+            <div class="col-md-6 wtitle center">
+              <p class="fs18">Pages</p>
+            </div>
+          </div>
+          <div class="row">
+            <ul>
+              <li *ngFor="let page of pages">
+                <div class="col-md-9">
+                  <h4>{{page.pageName}}</h4>
+                  <p>{{page.pageDesc}}</p>
+                </div>
+                <div class="col-md-3">
+                  <a class="btn btn-small btn-info" href="#">
+                    <i class="icon-info-sign"></i></a>
+                  <a class="btn btn-danger" href="#">
+                    <i class="icon-trash icon-large"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>

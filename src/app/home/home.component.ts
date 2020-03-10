@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+ public pages : Array<any> = [];
 
   constructor(
     private _pageService: PageService
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this._pageService.getAllPages().subscribe(
       (res) => {
-        console.log(res);
+        this.pages=res;
       },
       (err) => {
         console.log(err);

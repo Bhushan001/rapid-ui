@@ -10,8 +10,8 @@ export class PageService {
         private http: HttpClient) {
     }
 
-    public getAllPages() {
+    public getAllPages(): Observable<any> {
         let url = 'http://localhost:8080/pages/list';
-        return this.http.get(url).map((res)=> res);
+        return this.http.get(url).map((res) => res);
     }
 }

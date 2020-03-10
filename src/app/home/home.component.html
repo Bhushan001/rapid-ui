@@ -1,3 +1,20 @@
-<p>
-  home works!
-</p>
+<table class="table table-responsive table-condensed">
+  <thead>
+    <th>ID</th>
+    <th>Page Name</th>
+    <th>Page Description</th>
+    <th>Page Data</th>
+    <th>Created By</th>
+    <th>Created At</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let page of pages">
+      <td>{{page.id}}</td>
+      <td>{{page.pageName}}</td>
+      <td>{{page.pageDesc}}</td>
+      <td>{{page.data}}</td>
+      <td>{{page.createdBy}}</td>
+      <td>{{page.createdAt | date}}</td>
+    </tr>
+  </tbody>
+</table>
