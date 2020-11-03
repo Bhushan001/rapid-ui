@@ -1,7 +1,7 @@
-import { ProjectManagerComponent } from './project-manager.component';
-import { ProjectManagerRoutingModule } from './project-manger.routing.module';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {ProjectManagerComponent} from './project-manager.component';
+import {ProjectManagerRoutingModule} from './project-manger.routing.module';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   imports: [
@@ -12,4 +12,5 @@ import { CommonModule } from '@angular/common';
     ProjectManagerComponent
   ]
 })
-export class ProjectManagerModule { }
+export class ProjectManagerModule {
+}

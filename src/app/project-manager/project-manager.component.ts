@@ -1,5 +1,5 @@
-import { PageService } from './../shared/services/page.service';
-import { Component, OnInit } from '@angular/core';
+import {PageService} from './../shared/services/page.service';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-project-manager',
@@ -8,24 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectManagerComponent implements OnInit {
   public pages: Array<any> = [];
+
   constructor(
-    private _pageService:PageService
-  ) { }
+    private _pageService: PageService
+  ) {
+  }
 
   ngOnInit() {
     this.getAllPages();
   }
 
-  getAllPages(){
+  getAllPages() {
     this._pageService.getAllPages().subscribe(
-      (pages)=> {
-        this.pages=pages;
+      (pages) => {
+        this.pages = pages;
         console.log(pages);
       },
-      (err)=> {
+      (err) => {
         console.log(err);
       },
-      ()=> {
+      () => {
         console.log('Completed');
       },
     );
